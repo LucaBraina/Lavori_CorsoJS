@@ -3,6 +3,7 @@ let btnAdd = document.getElementById("btnAdd");
 let btnSott = document.getElementById("btnSott");
 let btnMolt = document.getElementById("btnMolt");
 let btnDiv = document.getElementById("btnDiv");
+let btnReset = document.getElementById("btnReset");
 
 
 
@@ -56,4 +57,17 @@ btnDiv.addEventListener("click", function(){
 
     demo.innerHTML += "<h2>" + faiDivisione(num1,num2) + "</h2>"
    
+})
+
+function faiReset(numero1,numero2){
+    let reset = " ";
+    return reset
+}
+
+btnReset.addEventListener("click", function(){
+    let num1 = document.getElementById("num1").value = " ";
+    let num2 = document.getElementById("num2").value = " ";
+
+    demo.innerHTML = faiReset(num1,num2)
+
 })
